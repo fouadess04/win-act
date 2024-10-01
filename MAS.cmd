@@ -86,7 +86,7 @@ cls
 pushd "%~dp0"
 >nul findstr /v "$" "%~nx0" && (
 echo:
-echo Error - Script either has LF line ending issue or an empty line at the end of the script is missing.
+echo Error - Script either has LF line ending issue or an empty line at the end of the script is missing. (issue bgv)
 echo:
 echo:
 echo Help - %mas%troubleshoot
