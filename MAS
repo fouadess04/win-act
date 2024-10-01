@@ -3,7 +3,7 @@
 $ErrorActionPreference = "Stop"
 
 write-host
-Write-Host "The current command will be retired on Dec 31, 2024."
+Write-Host -ForegroundColor Red "The current command will be retired on Dec 31, 2024."
 Write-Host -ForegroundColor Green "Bigovi - Essaidi fouad"
 write-host
 
