@@ -10,9 +10,9 @@ write-host
 # Enable TLSv1.2 for compatibility with older clients for current session
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$DownloadURL1 = 'https://raw.githubusercontent.com/fouadess04/win-act/main/MAS.cmd'
+$DownloadURL1 = 'https://raw.githubusercontent.com/fouadess04/win-act/main/MAS-AIO.cmd'
 $DownloadURL2 = 'https://raw.githubusercontent.com/fouadess04/win-act/main/MAS-AIO.cmd'
-$DownloadURL3 = 'https://raw.githubusercontent.com/fouadess04/win-act/main/MAS-AIO-kl.cmd'
+$DownloadURL3 = 'https://raw.githubusercontent.com/fouadess04/win-act/main/MAS-AIO.cmd'
 
 $URLs = @($DownloadURL1, $DownloadURL2, $DownloadURL3)
 $ShuffledURLs = $URLs | Sort-Object { Get-Random }
