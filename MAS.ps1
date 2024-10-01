@@ -3,16 +3,16 @@
 $ErrorActionPreference = "Stop"
 
 write-host
-Write-Host "The current command (irm https://massgrave.dev/get | iex) will be retired on Dec 31, 2024."
-Write-Host -ForegroundColor Green "Use the new command (irm https://get.activated.win | iex) moving forward."
+Write-Host "The current command will be retired on Dec 31, 2024."
+Write-Host -ForegroundColor Green "Bigovi - Essaidi fouad"
 write-host
 
 # Enable TLSv1.2 for compatibility with older clients for current session
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$DownloadURL1 = 'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/52d4c52dba8e29a3c1fb295c8946dbe6cf2f0239/MAS/All-In-One-Version-KL/MAS_AIO.cmd'
-$DownloadURL2 = 'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=52d4c52dba8e29a3c1fb295c8946dbe6cf2f0239'
-$DownloadURL3 = 'https://git.activated.win/massgrave/Microsoft-Activation-Scripts/raw/commit/52d4c52dba8e29a3c1fb295c8946dbe6cf2f0239/MAS/All-In-One-Version-KL/MAS_AIO.cmd'
+$DownloadURL1 = 'https://raw.githubusercontent.com/fouadess04/win-act/main/MAS.cmd'
+$DownloadURL2 = 'https://raw.githubusercontent.com/fouadess04/win-act/main/MAS-AIO.cmd'
+$DownloadURL3 = 'https://raw.githubusercontent.com/fouadess04/win-act/main/MAS-AIO-kl.cmd'
 
 $URLs = @($DownloadURL1, $DownloadURL2, $DownloadURL3)
 $ShuffledURLs = $URLs | Sort-Object { Get-Random }
