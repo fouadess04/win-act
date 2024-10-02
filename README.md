@@ -1,1 +1,1 @@
-<h2>Microsoft activation script - MAS from \<Massgrave\></h2>
+<h2>Microsoft activation script - MAS from \\<Massgrave\\></h2>
